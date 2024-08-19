@@ -283,19 +283,21 @@ char* sortSmallLetters(const char* str)
 
 }
 
-//zad4
+//zad2
 int getNumIndex(const int* arr, size_t size,int num)
 {
 	if (!arr)
 		return -1;
 
+	int index = 0;
+
 	for (int i = 0;i < size;i++)
 	{
-		if (arr[i] == num)
-			return i;
+		if (arr[i] < num)
+			index++;
 	}
 
-	return -1;
+	return index;
 }
 
 void fillSeparated(const int* arr, size_t size, int* separated, int num, size_t numIndex)
@@ -349,11 +351,85 @@ int* separateArr(const int* arr, size_t size, int num)
 
 }
 
+//zad3
+
+void printSet(int* set, size_t size)
+{
+	if (!set)
+		return;
+
+	std::cout << '[';
+	for (int i = 1;i <= size;i++)
+		std::cout << set[i] << ' ';
+	std::cout << ']' << std::endl;
+}
+
+int onesCount(int num)
+{
+	int count = 0;
+
+	while (num)
+	{
+		if (num % 2 == 1)
+			count++;
+		num /= 2;
+	}
+
+	return count;
+}
+
+void fillSubset (int* set, size_t size, int*& subset, unsigned mask)
+{
+	size_t setSize = onesCount(mask);
+
+	subset = new int[setSize+1];
+	subset[0] = setSize;
+
+	int setIndex = 1;
+	for (int i = size - 1; i >= 0; i--)
+	{
+		if (mask % 2 != 0)
+			subset[setIndex++] = set[i];
+		mask /= 2;
+	}
+
+}
+
+void generateSubsets(int* set, size_t size, int** subsets, size_t matrixSize)
+{
+	if (!set || !subsets)
+		return;
+
+	for (unsigned i = 0; i < matrixSize; i++) 
+		fillSubset(set, size, subsets[i], i + 1);
+
+	}
+
+int** subsets(int* set, size_t size, size_t& matrixSize)
+{
+	matrixSize = (1 << size) - 1;
+
+	int** subsets = new int* [matrixSize];
+
+	generateSubsets(set, size, subsets, matrixSize);
+
+	return subsets;
+}
+
+void printSubsets(int** subsets, size_t rows)
+{
+	if (!subsets)
+		return;
+
+	for (int i = 0;i < rows;i++)
+		printSet(subsets[i], subsets[i][0]);
+}
 int main()
 {
-	int arr[] = { 1, 5, 6, 3, 0, -1, 2, 9, 7 };
-	int* separated = separateArr(arr, 9, 3);
+	int set[5] = { 1, 2, 3,4,5 };
+
+	size_t matrixSize = 0;
+	int** matrix = subsets(set, 5, matrixSize);
 	
-	if(separated)
-	printArr(separated, 9);
+	printSubsets(matrix, matrixSize);
 }
