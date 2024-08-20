@@ -1,19 +1,3 @@
-// fn9MI0600381_d2_3.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-/**
-*
-* Solution to homework assignment 2
-* Introduction to programming course
-* Faculty of Mathematics and Informatics of Sofia University
-* Winter semester 2023/2024
-*
-* @author Hristina Krumova
-* @idnumber 9MI0600381
-* @task 3
-*
-*/
-
 #include <iostream>
 constexpr size_t MAX_SIZE = 1024;
 
@@ -145,14 +129,3 @@ int main()
 	generateFirstNArrangements(symbolsToArrangePtr, n);
 
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
