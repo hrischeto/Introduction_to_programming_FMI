@@ -1,0 +1,5 @@
+﻿  pract 14.cpp
+C:\Users\hrisi\source\repos\UP\pract 14\pract 14\pract 14.cpp(41,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\hrisi\source\repos\UP\pract 14\pract 14\pract 14.cpp(112,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\hrisi\source\repos\UP\pract 14\pract 14\pract 14.cpp(151,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  pract 14.vcxproj -> C:\Users\hrisi\source\repos\UP\pract 14\x64\Debug\pract 14.exe

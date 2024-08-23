@@ -1,0 +1,10 @@
+﻿  pract7.cpp
+C:\Users\hrisi\source\repos\UP\pract7\pract7\pract7.cpp(23,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\hrisi\source\repos\UP\pract7\pract7\pract7.cpp(26,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\hrisi\source\repos\UP\pract7\pract7\pract7.cpp(46,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\hrisi\source\repos\UP\pract7\pract7\pract7.cpp(65,15): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\hrisi\source\repos\UP\pract7\pract7\pract7.cpp(79,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\hrisi\source\repos\UP\pract7\pract7\pract7.cpp(125,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\hrisi\source\repos\UP\pract7\pract7\pract7.cpp(10): warning C4715: 'fromCharToInt': not all control paths return a value
+C:\Users\hrisi\source\repos\UP\pract7\pract7\pract7.cpp(18): warning C4715: 'fromIntToChar': not all control paths return a value
+  pract7.vcxproj -> C:\Users\hrisi\source\repos\UP\pract7\x64\Debug\pract7.exe

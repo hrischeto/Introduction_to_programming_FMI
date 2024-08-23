@@ -1,0 +1,3 @@
+﻿  pract10.cpp
+C:\Users\hrisi\source\repos\UP\pract10\pract10\pract10.cpp(33,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  pract10.vcxproj -> C:\Users\hrisi\source\repos\UP\pract10\x64\Debug\pract10.exe
